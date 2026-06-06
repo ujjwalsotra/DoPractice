@@ -9,3 +9,7 @@ def root():
 @app.get("/health")
 def getHealth():
     return {"status":"ok"}
+
+@app.get("/pokemon")
+def getPokemon():
+    return {"Pokemon": "Pikachu, Charmander, Squirtle, Bulbasaur"}
